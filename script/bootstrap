@@ -47,9 +47,7 @@ dockutil --add /Applications/Firefox.app --no-restart
 dockutil --add /Applications/Mail.app --no-restart
 dockutil --add /Applications/Calendar.app --no-restart
 dockutil --add /Applications/Messages.app --no-restart
-dockutil --add ~/Applications/slack.app --no-restart
 dockutil --add /Applications/Atom.app --no-restart
-dockutil --add ~/Applications/geppetto.app --no-restart
 dockutil --add /Applications/SourceTree.app --no-restart
 dockutil --add /Applications/Virtualbox.app --no-restart
 dockutil --add /Applications/iTunes.app --no-restart

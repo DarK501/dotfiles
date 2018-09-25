@@ -17,25 +17,8 @@ function doIt() {
 doIt;
 unset doIt;
 
-echo "Installing google drive ..."
-brew cask install google-drive
-echo "Installing stow ..."
-brew install stow
 echo "Installing dockutil ..."
 brew install dockutil
-
-if [ ! -d ~/Google\ Drive/bootstrap/ ]; then
-	echo " "
-	echo "Sign into google drive and wait for a sync to complete, hit enter when complete"
-  echo " "
-	read continue
-fi
-
-cd ~/Google\ Drive/bootstrap;
-
-# Stow symlinks directories and files, so things like Firefox profiles are synced between machines via drive
-# add more directories here, but ensure that they don't exist at the target or things break (should not matter on a clean machine)
-stow -t ~/Library Library
 
 # run os x deaults script
 source ~/.macos
@@ -48,7 +31,6 @@ dockutil --add /Applications/Mail.app --no-restart
 dockutil --add /Applications/Calendar.app --no-restart
 dockutil --add /Applications/Messages.app --no-restart
 dockutil --add /Applications/Atom.app --no-restart
-dockutil --add /Applications/SourceTree.app --no-restart
 dockutil --add /Applications/Virtualbox.app --no-restart
 dockutil --add /Applications/iTunes.app --no-restart
 dockutil --add /Applications/Utilities/Terminal.app --no-restart

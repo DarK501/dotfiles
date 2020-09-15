@@ -122,11 +122,11 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Set a custom wallpaper image.
-function wallpaper() {
-    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock
-}
+#function wallpaper() {
+#    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock
+#}
 
-wallpaper "~/Pictures/desktop.jpg"
+#wallpaper "~/Pictures/desktop.jpg"
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
